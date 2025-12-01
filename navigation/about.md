@@ -7,7 +7,7 @@ comments: true
 
 ## As a conversation Starter
 
-Here are some places I have lived.
+Here is the only place I have lived at !
 
 <style>
     /* Style looks pretty compact, 
@@ -56,7 +56,7 @@ Here are some places I have lived.
     // 2. Define a JavaScript object for our http source and our data rows for the Living in the World grid
     var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
     var living_in_the_world = [
-        {"house": "house.jpg", "greeting": "My Home", "description": "House 1"}
+        {"house": "house.jpg", "greeting": "My Humble Home <3", "description": "House 1"}
         //{"house": "b/b9/Flag_of_Oregon.svg", "greeting": "Age 3-4", "description": "House 2"},
         //{"house": "b/be/Flag_of_England.svg", "greeting": "Age 4-6", "description": "House 3"},
         //{"house": "e/ef/Flag_of_Hawaii.svg", "greeting": "Age 4-current(14)", "description": "House 4- current house!!!"},
@@ -122,13 +122,8 @@ Gallery of Pics, scroll to the right for more ...
   <img src="{{site.baseurl}}/images/about/house.jpg" alt="Image 1">
   <img src="{{site.baseurl}}/images/about/Tennis.jpg" alt="Image 2">
   <img src="{{site.baseurl}}/images/about/Dance.jpg" alt="Image 3">
- <img src="{{site.baseurl}}/images/about/surf.jpg" alt="Image 4">
-  <img src="{{site.baseurl}}/images/about/john_lora.jpg" alt="Image 5">
-  <img src="{{site.baseurl}}/images/about/lora_fam.jpg" alt="Image 6">
-  <img src="{{site.baseurl}}/images/about/lora_fam2.jpg" alt="Image 7">
-  <img src="{{site.baseurl}}/images/about/pj_party.jpg" alt="Image 8">
-  <img src="{{site.baseurl}}/images/about/trent_family.png" alt="Image 9">
-  <img src="{{site.baseurl}}/images/about/claire.jpg" alt="Image 10">
-  <img src="{{site.baseurl}}/images/about/grandkids.jpg" alt="Image 11">
-  <img src="{{site.baseurl}}/images/about/farm.jpg" alt="Image 12">
+ <img src="{{site.baseurl}}/images/about/1.jpg" alt="Image 4">
+  <img src="{{site.baseurl}}/images/about/skating.jpg" alt="Image 5">
+  <img src="{{site.baseurl}}/images/about/sci oly1.png" alt="Image 6">
+  <img src="{{site.baseurl}}/images/about/2.jpg" alt="Image 7">
 </div>
