@@ -5,7 +5,7 @@ hide: true
 show_reading_time: false
 ---
 
-Hi! My name is [Aashi]
+Hi! My name is [Aashi hegu]
 
 ### Development Environment
 
