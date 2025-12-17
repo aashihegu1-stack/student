@@ -65,3 +65,6 @@ The all about me mainly focused on what I've done in life! I've focused on a wid
 As you can tell, I really love sports! I mainly do dance, ice skating and tennis however.
 
 I dont love studying as much but I have had my fair share in it! I did Sci Oly the longest but quit going into High School. I'm student coaching though!
+
+----------------------------------------------------------------------------------------------------------------------------------
+
