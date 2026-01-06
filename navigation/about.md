@@ -122,9 +122,9 @@ Gallery of Pics, scroll to the right for more ...
 ## Favorite Foods
 
 <div class="image-gallery">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Supreme_pizza.jpg" alt="Pizza">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Tacos_de_carnitas.jpg" alt="Tacos">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Pasta_Puttanesca.jpg" alt="Pasta">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Pizza_margherita.jpg" alt="Pizza">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Tacos_al_pastor.jpg" alt="Tacos">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Spaghetti_al_Pomodoro.JPG" alt="Pasta">
 </div>
 
 <style>
