@@ -118,26 +118,85 @@ For me, everything is all about family, sports and my hobbies.
 <comment>
 Gallery of Pics, scroll to the right for more ...
 </comment>
-
-## Favorite Foods
-
 <div class="image-gallery">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Pizza_margherita.jpg" alt="Pizza">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Tacos_al_pastor.jpg" alt="Tacos">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Spaghetti_al_Pomodoro.JPG" alt="Pasta">
+  <img src="{{site.baseurl}}/images/about/house.jpg" alt="Image 1">
+  <img src="{{site.baseurl}}/images/about/Tennis.jpg" alt="Image 2">
+  <img src="{{site.baseurl}}/images/about/Dance.jpg" alt="Image 3">
+ <img src="{{site.baseurl}}/images/about/1.jpg" alt="Image 4">
+  <img src="{{site.baseurl}}/images/about/skating.jpg" alt="Image 5">
+  <img src="{{site.baseurl}}/images/about/sci oly1.png" alt="Image 6">
+  <img src="{{site.baseurl}}/images/about/2.jpg" alt="Image 7">
 </div>
 
-<style>
-.image-gallery {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  gap: 10px;
+// Clear the output
+outputElement.innerHTML = '';
+
+// Data array
+const living_in_the_world = [
+  {
+    flag: "https://upload.wikimedia.org/wikipedia/commons/4/48/Brooklyn_Pizza-cropped.png",
+    description: "Pizza!",
+    greeting: "My favorite"
+  },
+  {
+    flag: "https://upload.wikimedia.org/wikipedia/commons/e/e1/Vegan_rhubarb-strawberry-blueberry_pie_with_caramel_oat_ice-cream_%283084610787%29.jpg",
+    description: "Icecream!",
+    greeting: "So good"
+  },
+  {
+    flag: "https://upload.wikimedia.org/wikipedia/commons/5/50/TORTEL-DOLS.jpg",
+    description: "Pasta!",
+    greeting: "Comfort food"
+  },
+  {
+    flag: "https://upload.wikimedia.org/wikipedia/commons/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg",
+    description: "Tacos!",
+    greeting: "Always a win"
+  }
+];
+
+// Create a div container with id
+const container = document.createElement('div');
+container.id = 'grid_container';
+
+// Style the container
+container.style.border = '2px solid';
+container.style.padding = '10px';
+
+// Grid specific styles
+container.style.display = 'grid';
+container.style.gridTemplateColumns = 'repeat(auto-fill, minmax(150px, 1fr))';
+container.style.gap = '10px';
+
+// Loop through data and create grid items
+for (const location of living_in_the_world) {
+  const gridItem = document.createElement('div');
+  gridItem.style.textAlign = 'center';
+
+  const img = document.createElement('img');
+  img.src = location.flag;
+  img.alt = location.description;
+  img.style.width = '100%';
+  img.style.height = '100px';
+  img.style.objectFit = 'contain';
+
+  const description = document.createElement('p');
+  description.textContent = location.description;
+  description.style.margin = '5px 0';
+  description.style.fontWeight = 'bold';
+
+  const greeting = document.createElement('p');
+  greeting.textContent = location.greeting;
+  greeting.style.margin = '5px 0';
+  greeting.style.fontStyle = 'italic';
+  greeting.style.opacity = '0.7';
+
+  gridItem.appendChild(img);
+  gridItem.appendChild(description);
+  gridItem.appendChild(greeting);
+
+  container.appendChild(gridItem);
 }
 
-.image-gallery img {
-  max-height: 150px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-</style>
+// Add container to output
+outputElement.appendChild(container);
