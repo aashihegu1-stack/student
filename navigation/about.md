@@ -128,6 +128,10 @@ Gallery of Pics, scroll to the right for more ...
   <img src="{{site.baseurl}}/images/about/2.jpg" alt="Image 7">
 </div>
 
+
+My Favourite food
+
+
 <div class="grid-container" id="grid_container_1">
     <!-- content will be added here by JavaScript -->
 </div>
@@ -139,7 +143,7 @@ Gallery of Pics, scroll to the right for more ...
     // 2. Define a JavaScript object for our http source and our data rows for the Living in the World grid
     var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
     var living_in_the_world = [
-        {"house": "house.jpg", "greeting": "My Humble Home1", "description": "kkkkk1"},
+        {"house": "https://upload.wikimedia.org/wikipedia/commons/4/48/Brooklyn_Pizza-cropped.png", "greeting": "My Humble Home1", "description": "kkkkk1"},
         {"house": "house.jpg", "greeting3333333": "Age 3-4", "description": "kkkkk2"}
         //{"house": "b/be/Flag_of_England.svg", "greeting": "Age 4-6", "description": "House 3"},
         //{"house": "e/ef/Flag_of_Hawaii.svg", "greeting": "Age 4-current(14)", "description": "House 4- current house!!!"},
@@ -155,7 +159,7 @@ Gallery of Pics, scroll to the right for more ...
         gridItem.className = "grid-item";  // This class name connects the gridItem to the CSS style elements
         // Add "img" HTML tag for the flag
         var img = document.createElement("img");
-        img.src = "{{site.baseurl}}/images/about/" + location.house; // concatenate the source and flag
+        img.src = location.house; // concatenate the source and flag
         img.alt = location.house + " House"; // add alt text for accessibility
 
         // Add "p" HTML tag for the description
