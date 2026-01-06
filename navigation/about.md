@@ -128,7 +128,9 @@ Gallery of Pics, scroll to the right for more ...
   <img src="{{site.baseurl}}/images/about/2.jpg" alt="Image 7">
 </div>
 
+<div id="test">
 
+</div>
 My Favourite food
 
 
@@ -143,10 +145,10 @@ My Favourite food
     // 2. Define a JavaScript object for our http source and our data rows for the Living in the World grid
     var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
     var living_in_the_world = [
-        {"house": "https://upload.wikimedia.org/wikipedia/commons/4/48/Brooklyn_Pizza-cropped.png", "greeting": "My Humble Home1", "description": "kkkkk1"},
-        {"house": "house.jpg", "greeting3333333": "Age 3-4", "description": "kkkkk2"}
-        //{"house": "b/be/Flag_of_England.svg", "greeting": "Age 4-6", "description": "House 3"},
-        //{"house": "e/ef/Flag_of_Hawaii.svg", "greeting": "Age 4-current(14)", "description": "House 4- current house!!!"},
+        {"house": "https://upload.wikimedia.org/wikipedia/commons/4/48/Brooklyn_Pizza-cropped.png", "greeting": "Pizza", "description": "My Favourite pizza"},
+        {"house": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Vegan_rhubarb-strawberry-blueberry_pie_with_caramel_oat_ice-cream_%283084610787%29.jpg", "greeting": "Icecream", "description": "icecream"},
+    {"house": "https://upload.wikimedia.org/wikipedia/commons/5/50/TORTEL-DOLS.jpg", "greeting": "Pasta", "description": "Pasta"},
+    {"house": "https://upload.wikimedia.org/wikipedia/commons/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg", "greeting": "Tacos", "description":"Tacos"}
     ];
 
     // 3a. Consider how to update style count for size of container
