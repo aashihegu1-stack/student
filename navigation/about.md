@@ -119,68 +119,25 @@ For me, everything is all about family, sports and my hobbies.
 Gallery of Pics, scroll to the right for more ...
 </comment>
 
-// Clear the output
-outputElement.innerHTML = "";
+## Favorite Foods
 
-// Data array
-const favorite_foods = [
-  {
-    image: "https://upload.wikimedia.org/wikipedia/commons/d/d3/Supreme_pizza.jpg",
-    name: "Pizza",
-    description: "Cheesy, crispy, and classic"
-  },
-  {
-    image: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Tacos_de_carnitas.jpg",
-    name: "Tacos",
-    description: "Savory and full of flavor"
-  },
-  {
-    image: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Pasta_Puttanesca.jpg",
-    name: "Pasta",
-    description: "Comfort food perfection"
-  }
-];
+<div class="image-gallery">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Supreme_pizza.jpg" alt="Pizza">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Tacos_de_carnitas.jpg" alt="Tacos">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Pasta_Puttanesca.jpg" alt="Pasta">
+</div>
 
-// Create a div container with id
-const container = document.createElement("div");
-container.id = "grid_container";
-
-// Style the container
-container.style.border = "2px solid";
-container.style.padding = "10px";
-
-// Grid specific styles
-container.style.display = "grid";
-container.style.gridTemplateColumns = "repeat(auto-fill, minmax(150px, 1fr))";
-container.style.gap = "10px";
-
-// Loop through data and create grid items
-for (const food of favorite_foods) {
-  const gridItem = document.createElement("div");
-  gridItem.style.textAlign = "center";
-
-  const img = document.createElement("img");
-  img.src = food.image;
-  img.alt = food.name;
-  img.style.width = "100%";
-  img.style.height = "100px";
-  img.style.objectFit = "contain";
-
-  const name = document.createElement("p");
-  name.textContent = food.name;
-  name.style.fontWeight = "bold";
-
-  const description = document.createElement("p");
-  description.textContent = food.description;
-  description.style.fontStyle = "italic";
-  description.style.opacity = "0.7";
-
-  gridItem.appendChild(img);
-  gridItem.appendChild(name);
-  gridItem.appendChild(description);
-
-  container.appendChild(gridItem);
+<style>
+.image-gallery {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 10px;
 }
 
-// Add container to output
-outputElement.appendChild(container);
+.image-gallery img {
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+</style>
