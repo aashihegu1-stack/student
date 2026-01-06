@@ -131,8 +131,8 @@ Gallery of Pics, scroll to the right for more ...
 <div id="test">
 
 </div>
-My Favourite food
 
+##### My Favourite food
 
 <div class="grid-container" id="grid_container_1">
     <!-- content will be added here by JavaScript -->
