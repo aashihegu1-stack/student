@@ -128,6 +128,7 @@ Gallery of Pics, scroll to the right for more ...
   <img src="{{site.baseurl}}/images/about/2.jpg" alt="Image 7">
 </div>
 
+<script>
 // Clear the output
 outputElement.innerHTML = '';
 
@@ -190,3 +191,4 @@ for (const location of favorite_foods) {
 
 // Add containter to output 
 outputElement.appendChild(container);
+</script>
