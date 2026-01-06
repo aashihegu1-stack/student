@@ -127,3 +127,77 @@ Gallery of Pics, scroll to the right for more ...
   <img src="{{site.baseurl}}/images/about/sci oly1.png" alt="Image 6">
   <img src="{{site.baseurl}}/images/about/2.jpg" alt="Image 7">
 </div>
+
+// Clear the output
+outputElement.innerHTML = '';
+
+// Data array
+const favorite_foods = [
+  {
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/d3/Supreme_pizza.jpg",
+    name: "Pizza",
+    description: "Cheesy, crispy, and classic"
+  },
+  {
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Tacos_de_carnitas.jpg",
+    name: "Tacos",
+    description: "Savory and full of flavor"
+  },
+  {
+    image: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Pasta_Puttanesca.jpg",
+    name: "Pasta",
+    description: "Comfort food perfection"
+  }
+];
+
+// Create a div container with id
+const container = document.createElement('div');
+container.id = 'grid_container';
+
+// Style the container 
+container.style.border = '2px solid';
+container.style.padding = '10px';
+
+// Grid specific styles
+container.style.display = 'grid';
+container.style.gridTemplateColumns = 'repeat(auto-fill, minmax(150px, 1fr))';
+container.style.gap = '10px';
+
+// Loop through data and create grid items
+for (const food of favorite_foods) {
+  // Create grid item
+  const gridItem = document.createElement('div');
+  gridItem.style.textAlign = 'center';
+  
+  // Create a food image
+  const img = document.createElement('img');
+  img.src = food.image;
+  img.alt = food.name;
+  img.style.width = '100%';
+  img.style.height = '100px';
+  img.style.objectFit = 'contain';
+  
+  // Create a food name
+  const name = document.createElement('p');
+  name.textContent = food.name;
+  name.style.margin = '5px 0';
+  name.style.fontWeight = 'bold';
+  
+  // Create a description
+  const description = document.createElement('p');
+  description.textContent = food.description;
+  description.style.margin = '5px 0';
+  description.style.fontStyle = 'italic';
+  description.style.opacity = '0.7';
+  
+  // Add all elements to grid item
+  gridItem.appendChild(img);
+  gridItem.appendChild(name);
+  gridItem.appendChild(description);
+  
+  // Add grid item to container
+  container.appendChild(gridItem);
+}
+
+// Add container to output 
+outputElement.appendChild(container);

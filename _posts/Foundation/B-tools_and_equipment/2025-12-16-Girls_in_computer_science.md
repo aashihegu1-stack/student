@@ -6,6 +6,8 @@ description: What I've gained after attending WICS
 permalink: /Women/cs
 ---
 
+### Women in Computer Science- 12/16/25
+
 ## Why Computer Science Matters
 
 Computer science is a field that can be applied by almost anyone who learns it. People use it to create projects, start businesses, build nonprofits, or explore creativity through technology. Even individuals with no prior computer science background often enter the field because it directly connects to real-world experiences. Technology exists in nearly every aspect of modern life, and computer science provides the tools to understand, shape, and improve it.
@@ -26,7 +28,7 @@ Time management is also essential. Projects require planning, iteration, and dea
 
 Computer science is a project-based discipline. When creating projects, developers are encouraged to put users first. This builds empathy and reinforces the importance of designing with purpose. Projects become more meaningful when they are connected to personal interests, allowing creativity to drive technical growth.
 
-A key question to consider when developing any project is: **What impact does this have?** Understanding the purpose behind a project gives it value beyond completing an assignment.
+A key question to consider when developing any project is: **What impact does this have?:** Understanding the purpose behind a project gives it value beyond completing an assignment.
 
 ## Growth, Curiosity, and Learning Resources
 
